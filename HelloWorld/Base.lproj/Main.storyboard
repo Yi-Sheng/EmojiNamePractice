@@ -19,16 +19,20 @@
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tr-wb-V1Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="197"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="155.5"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                        <state key="normal" title="🥰"/>
+                                        <state key="normal" title="🥰">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
                                         <connections>
                                             <action selector="emojiPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlZ-8t-cxO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpR-Gz-xYj">
-                                        <rect key="frame" x="0.0" y="207" width="374" height="197"/>
+                                        <rect key="frame" x="0.0" y="165.5" width="374" height="155.5"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <state key="normal" title="😂"/>
@@ -37,7 +41,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-z1-D7t">
-                                        <rect key="frame" x="0.0" y="414" width="374" height="197"/>
+                                        <rect key="frame" x="0.0" y="331" width="374" height="156"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <state key="normal" title="😜"/>
@@ -46,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8O-Ib-qwn">
-                                        <rect key="frame" x="0.0" y="621" width="374" height="197"/>
+                                        <rect key="frame" x="0.0" y="497" width="374" height="155.5"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <state key="normal" title="😏"/>
@@ -54,14 +58,26 @@
                                             <action selector="emojiPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JqQ-g8-Hz2"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTT-me-JtG">
+                                        <rect key="frame" x="0.0" y="662.5" width="374" height="155.5"/>
+                                        <color key="backgroundColor" red="0.80592397390000003" green="1" blue="0.84292819860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <state key="normal" title="🤩"/>
+                                        <connections>
+                                            <action selector="emojiPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0PX-oI-Cc1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="cTT-me-JtG" firstAttribute="leading" secondItem="PqZ-ax-0qU" secondAttribute="leading" id="2v6-hC-Wek"/>
+                                    <constraint firstAttribute="trailing" secondItem="cTT-me-JtG" secondAttribute="trailing" id="6rV-nn-6Hp"/>
+                                    <constraint firstItem="cTT-me-JtG" firstAttribute="height" secondItem="G8O-Ib-qwn" secondAttribute="height" id="73P-T2-fbg"/>
                                     <constraint firstAttribute="trailing" secondItem="G8O-Ib-qwn" secondAttribute="trailing" id="D2a-lr-q0H"/>
-                                    <constraint firstAttribute="bottom" secondItem="G8O-Ib-qwn" secondAttribute="bottom" id="ExK-x9-dPa"/>
                                     <constraint firstItem="2Tr-wb-V1Z" firstAttribute="height" secondItem="zpR-Gz-xYj" secondAttribute="height" id="Llj-qG-zZz"/>
                                     <constraint firstItem="G8O-Ib-qwn" firstAttribute="leading" secondItem="PqZ-ax-0qU" secondAttribute="leading" id="Lz4-az-Hf5"/>
                                     <constraint firstItem="zpR-Gz-xYj" firstAttribute="height" secondItem="bj5-z1-D7t" secondAttribute="height" id="WDU-Sl-u4I"/>
                                     <constraint firstItem="2Tr-wb-V1Z" firstAttribute="top" secondItem="PqZ-ax-0qU" secondAttribute="top" id="Zjd-D9-v56"/>
+                                    <constraint firstAttribute="bottom" secondItem="cTT-me-JtG" secondAttribute="bottom" id="fot-mv-UjX"/>
                                     <constraint firstItem="bj5-z1-D7t" firstAttribute="height" secondItem="G8O-Ib-qwn" secondAttribute="height" id="laE-Y3-WQQ"/>
                                 </constraints>
                             </stackView>
@@ -75,6 +91,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="emojiButton" destination="2Tr-wb-V1Z" collectionClass="NSMutableArray" id="7iC-wF-2hG"/>
+                        <outletCollection property="emojiButton" destination="zpR-Gz-xYj" collectionClass="NSMutableArray" id="No3-Zv-OOz"/>
+                        <outletCollection property="emojiButton" destination="bj5-z1-D7t" collectionClass="NSMutableArray" id="nQN-nq-kPK"/>
+                        <outletCollection property="emojiButton" destination="G8O-Ib-qwn" collectionClass="NSMutableArray" id="Wu6-Me-nWp"/>
+                        <outletCollection property="emojiButton" destination="cTT-me-JtG" collectionClass="NSMutableArray" id="hkn-hG-iQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
