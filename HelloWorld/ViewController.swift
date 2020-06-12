@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     // MARK: - IBAction
     
     @IBAction func emojiPressed(_ sender: UIButton) {
-        
+                
         switch sender.tag {
         case 0:
             showAlertView(by: sender.titleLabel!.text!, with: emojiName[0])
