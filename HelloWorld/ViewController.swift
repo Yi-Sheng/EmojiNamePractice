@@ -12,7 +12,11 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    let emojiName = ["有著愛心的微笑表情", "喜極而泣的表情", "眨眼伸舌頭的表情", "冷笑的表情"]
+    let emojiName = ["有著愛心的微笑表情", "喜極而泣的表情", "眨眼伸舌頭的表情", "冷笑的表情", "有著星星眼睛的表情"]
+    
+    // MARK: - IBOutlet
+    
+    @IBOutlet var emojiButton: [UIButton]!
     
     // MARK: - IBAction
     
@@ -27,6 +31,8 @@ class ViewController: UIViewController {
             showAlertView(by: sender.titleLabel!.text!, with: emojiName[2])
         case 3:
             showAlertView(by: sender.titleLabel!.text!, with: emojiName[3])
+        case 4:
+            showAlertView(by: sender.titleLabel!.text!, with: emojiName[4])
         default:
             break
         }
@@ -39,6 +45,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        for index in 0..<emojiButton.count {
+            emojiButton[index].layer.cornerRadius = 10.0
+        }
     }
     
     // MARK: - Custom Function
