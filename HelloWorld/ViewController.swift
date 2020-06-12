@@ -22,20 +22,7 @@ class ViewController: UIViewController {
     
     @IBAction func emojiPressed(_ sender: UIButton) {
                 
-        switch sender.tag {
-        case 0:
-            showAlertView(by: sender.titleLabel!.text!, with: emojiName[0])
-        case 1:
-            showAlertView(by: sender.titleLabel!.text!, with: emojiName[1])
-        case 2:
-            showAlertView(by: sender.titleLabel!.text!, with: emojiName[2])
-        case 3:
-            showAlertView(by: sender.titleLabel!.text!, with: emojiName[3])
-        case 4:
-            showAlertView(by: sender.titleLabel!.text!, with: emojiName[4])
-        default:
-            break
-        }
+        showAlertView(by: sender.titleLabel!.text!, with: emojiName[sender.tag])
     }
     
     
